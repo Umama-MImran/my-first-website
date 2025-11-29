@@ -1,0 +1,144 @@
+:root{
+    --c1:rgb(183, 116, 102);
+    --c2: rgb(255, 225, 175);
+    --c3:rgb(226, 181, 154);
+    --c4:rgb(226, 161, 111);
+    --c5:rgb(255, 240, 221);
+    --c6:rgb(209, 211, 212);
+    --c7:rgb(134, 176, 189);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://i.pinimg.com/1200x/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/* nave bar styling start */
+#navebar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: var(--c1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.n1{
+    display: flex;
+   animation: slideInLeft; 
+   animation-duration: 3s; 
+}
+
+.n1>img{
+    width: 60px;
+}
+.n1>h2{
+    padding-top: 15px;
+    padding-left: 5px;
+    text-decoration: underline;
+    color: white;
+}
+.n2{
+    padding-top: 15px;
+}
+.n2>a{
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--c7);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px rgba(0, 0,0, 0.5),
+                 inset 5px 5px 12px rgba(0, 0,0, 0.5);
+}
+.n2>a:hover{
+    color: black;
+    background-color: var(--c6);
+    border: 1px solid black;
+    box-shadow: none;
+}
+/* nave bar styling end  */
+/* about styling start */
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-top: 5%;
+
+}
+.about{
+    background-color: rgba(255, 225, 175,0.4);
+    border-radius: 20px;
+    animation: heartBeat; 
+    animation-duration: 3s;
+    width: 600px; 
+    height: 300px;
+    padding: 20px;
+     box-shadow: 5px 5px 12px rgba(0, 0,0, 0.5),
+                 inset 5px 5px 12px rgba(0, 0,0, 0.5);
+}
+.a1{
+    text-align: center;
+    text-decoration: overline underline;
+    padding: 20px 0;
+}
+/* about styling end */
+
+/* footer start  */
+#flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#footer{
+    height: 200px;
+    background-color: var(--c1);
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.f1>a{
+    color: white;
+    font-size: 20px;
+    text-decoration: double underline;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+.f1>a:hover{
+    font-size: 25px;
+    color: black;
+}
+.f2{
+    text-align: center;
+}
+.f2>h4{
+    padding: 10px;
+}
+.f2>a{
+    
+    color: white;
+    font-size: 20px;
+    text-decoration: double underline;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+.f2>a:hover{
+    font-size: 25px;
+    color: black;
+}
+h4{
+    padding: 10px;
+}
+h5{
+    text-align: center;
+}
+/* footer end 
